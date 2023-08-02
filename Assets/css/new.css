@@ -1,0 +1,35 @@
+.section-mission {
+    background-image: url('../img/Picture8.png');
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.block-mission {
+    border: #C4E0F5 2px solid;
+    border-style: dashed;
+    border-radius: 10px;
+    width: 40%;
+    position: absolute;
+    
+}
+
+.block-mission:nth-child(2) {
+    left: 30%;
+    top: 20%;
+}
+.block-mission:nth-child(3) {
+    left: 60%;
+    top: 40%;
+}
+.block-mission:nth-child(4) {
+    top: 50%;
+}
+.block-mission:nth-child(5) {
+    left: 30%;
+    top: 67%;
+}
+.block-mission:nth-child(6) {
+    left: 60%;
+    top: 82%;
+}
