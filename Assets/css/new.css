@@ -34,10 +34,14 @@
     top: 82%;
 }
 
-.__heading-mission h2 {
+.__heading-mission h2, h4 {
     color: #023E8A;
 }
 
-.__content-mission p {
-    color: #023E8A;
+.__content-mission ul {
+    list-style: square;
+}
+
+.__content-mission li {
+    margin: 4px;
 }
