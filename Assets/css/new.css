@@ -1,9 +1,3 @@
-.section-mission {
-    background-image: url('../img/Picture8.png');
-    background-size: cover;
-    height: 100vh;
-    
-}
 
 .block-mission {
     border: #C4E0F5 2px solid;
@@ -14,34 +8,59 @@
     
 }
 
+
+.block-mission:nth-child(1) {
+    left: 20%;
+    top: 2%;
+}
+
 .block-mission:nth-child(2) {
-    left: 30%;
-    top: 20%;
+    left: 50%;
+    top: 22%;
 }
 .block-mission:nth-child(3) {
     left: 60%;
-    top: 40%;
+    top: 42%;
 }
 .block-mission:nth-child(4) {
-    top: 50%;
+    top: 63%;
 }
 .block-mission:nth-child(5) {
-    left: 30%;
-    top: 67%;
+    left: 10%;
+    top: 80%;
 }
 .block-mission:nth-child(6) {
-    left: 60%;
-    top: 82%;
+    left: 55%;
+    top: 85%;
 }
 
-.__heading-mission h2, h4 {
+.__heading-mission h2,h3, h4 {
     color: #023E8A;
 }
 
-.__content-mission ul {
+ul {
     list-style: square;
 }
 
 .__content-mission li {
     margin: 4px;
+}
+
+.module4 table tr {
+    padding: 4px
+}
+
+.module4 table tr:nth-child(odd) {
+    background-color: #C4E0F5;
+}
+
+.module4 table th:nth-child(odd) {
+    color: #023E8A;
+}
+
+.module4 table tr:nth-child(1) {
+    border-top: 3px #023E8A solid;
+}
+.module4 table tr:last-child {
+    border-bottom: 3px #023E8A solid;
 }
