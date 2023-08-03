@@ -64,3 +64,17 @@ ul {
 .module4 table tr:last-child {
     border-bottom: 3px #023E8A solid;
 }
+
+.person-info__edu thead {
+    background-color: #C4E0F5;
+    color: #023E8A;
+    font-weight: bold;
+}
+
+.person-info__edu thead th:nth-child(1) {
+    border-right: 3px #fff solid;
+}
+
+.person-info__edu tr {
+    border-bottom: 3px #111 solid;
+}
