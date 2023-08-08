@@ -78,3 +78,20 @@ ul {
 .person-info__edu tr {
     border-bottom: 3px #111 solid;
 }
+
+#thtc tr {
+    border-bottom: 1px #111 solid;
+    
+}
+#thtc2 tr {
+    border-bottom: 1px #111 solid;
+
+}
+
+#bcbtgd table td:nth-child(1) {
+    width: 30%;
+}
+
+#bcbtgd h2 {
+    color: #023E8A;
+}
