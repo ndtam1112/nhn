@@ -95,3 +95,20 @@ ul {
 #bcbtgd h2 {
     color: #023E8A;
 }
+
+#tmbc p {
+    text-indent: 50px;
+}
+
+#tmbc #tb1 td:nth-child(2) {
+    text-align: center;
+}
+
+#tmbc #tb1 tr td:nth-child(1) {
+    width: 40%;
+}
+
+#tmbc #tb6 tr td:nth-child(1) {
+    text-align: left;
+    width: 40%;
+}
