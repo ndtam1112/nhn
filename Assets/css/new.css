@@ -112,3 +112,10 @@ ul {
     text-align: left;
     width: 40%;
 }
+
+#consoquantrong {
+    background-image: linear-gradient(to right,#2F5597, #8FAADCed);
+    height: 5px;
+    width: 100%;
+
+}
