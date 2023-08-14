@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Assets/css/global.min.css" />
     <link rel="stylesheet" href="../Assets/css/new.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -57,7 +58,7 @@
             <div class="flex-column">
               <p style="color: #023e8a">Tổng Tài sản</p>
               <p style="color: #023e8a; font-weight: bold; font-size: 5rem">
-                679
+                679<span style="color: #023e8a; font-size: 1rem">tỷ đồng</span>
               </p>
             </div>
             <div class="flex-column">
@@ -66,7 +67,6 @@
                 class="img-fluid"
                 alt=""
               />
-              <p style="color: #023e8a">tỷ đồng</p>
             </div>
             <p style="font-size: 1.5rem">32%</p>
           </div>
@@ -76,7 +76,7 @@
             <div class="flex-column">
               <p style="color: #023e8a">Tài sản ngắn hạn</p>
               <p style="color: #023e8a; font-weight: bold; font-size: 5rem">
-                228
+                228<span style="color: #023e8a; font-size: 1rem">tỷ đồng</span>
               </p>
             </div>
             <div class="flex-column">
@@ -85,7 +85,6 @@
                 class="img-fluid"
                 alt=""
               />
-              <p style="color: #023e8a">tỷ đồng</p>
             </div>
             <p style="font-size: 1.5rem">128%</p>
           </div>
@@ -95,7 +94,7 @@
             <div class="flex-column">
               <p style="color: #023e8a">Tài sản dài hạn</p>
               <p style="color: #023e8a; font-weight: bold; font-size: 5rem">
-                469
+                469<span style="color: #023e8a; font-size: 1rem">tỷ đồng</span>
               </p>
             </div>
             <div class="flex-column">
@@ -104,7 +103,6 @@
                 class="img-fluid"
                 alt=""
               />
-              <p style="color: #023e8a">tỷ đồng</p>
             </div>
             <p style="font-size: 1.5rem">15%</p>
           </div>
@@ -140,6 +138,50 @@
           </ul>
         </div>
       </div>
+      <div id="block-3">
+        <h3 class="fw-bold text-center">Tổng tài sản giai đoạn 2018-2022</h3>
+        <canvas id="myChart" style="width: 100%"></canvas>
+      </div>
     </section>
+    <script>
+      var xValues = ['2018', '2019', '2020', '2021', '2022']
+      var barColors = ['#8FAADC', '#2F5597']
+
+      new Chart('myChart', {
+        type: 'bar',
+        data: {
+          labels: xValues,
+
+          datasets: [
+            {
+              label: 'Tài sản dài hạn',
+              backgroundColor: '#2F5597',
+              data: [133.425, 145.256, 197.604, 406.097, 469.216],
+            },
+            {
+              label: 'Tài sản ngắn hạn',
+              backgroundColor: '#8FAADC',
+              data: [54.217, 123.865, 119.92, 100.089, 227.869],
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: 'Stacked Bar chart for pollution status',
+            },
+          },
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      })
+    </script>
   </body>
 </html>
