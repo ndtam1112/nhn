@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assets/css/global.min.css" />
+    <link rel="stylesheet" href="../Assets/css/new.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <h3>Kết quả sản xuất kinh doanh năm 2022</h3>
+      <span class="fst-italic float-end">ĐVT: tỷ đồng </span>
+      <table class="table text-center">
+        <thead style="background-color: #c4e0f5; color: #023e8a">
+          <tr>
+            <th>Chỉ tiêu</th>
+            <th>Kế hoạch</th>
+            <th>Thực hiện</th>
+            <th>% Thực hiện so với kế hoạch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tổng doanh thu</td>
+            <td>260</td>
+            <td>108</td>
+            <td>41,5%</td>
+          </tr>
+          <tr>
+            <td>Lợi nhuận sau thuế</td>
+            <td>46</td>
+            <td>1,88</td>
+            <td>4,1%</td>
+          </tr>
+          <tr>
+            <td>LNST/Doanh thu</td>
+            <td>17,7%</td>
+            <td>1,74%</td>
+            <td>9,8%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex flex-row">
+        <div class="col-6 pe-3">
+          <p>
+            Năm 2022 là một năm nhiều thách thức với nền kinh tế nói chung và
+            BĐS nói riêng, tuy nhiên, kết quả kinh doanh năm 2022 Công ty vẫn
+            cho thấy tín hiệu ổn định. Kết quả kinh doanh của Công ty: Tổng
+            doanh thu 108 tỷ đồng, đạt 41,5% kế hoạch; Lợi nhuận sau thuế 1,8 tỷ
+            đồng, đạt 4,1% kế hoạch.
+          </p>
+          <p>
+            Doanh thu, lợi nhuận năm 2022 thấp nhất trong 4 năm trở lại, chủ yếu
+            là do các dự án BĐS dù được tích cực triển khai nhưng không có dự án
+            nào mở bán, đa số sẽ được mở bản kể từ năm 2023 tùy thuộc vào tình
+            hình chung của thị trường BĐS. Chiếm đến 97% cơ cấu doanh thu là đến
+            từ hoạt động xây dựng, 3% còn lại đến
+          </p>
+        </div>
+        <div class="col-6 ps-3">
+          <p>
+            từ hoạt động cung cấp dịch vụ và không ghi nhận doanh thu từ hoạt
+            động kinh doanh bất động sản.
+          </p>
+          <p>
+            Lợi nhuận trước lãi vay, thuế và khấu hao (EBITDA) ghi nhận 8,6 tỷ
+            đồng và Lợi nhuận trước lãi vay và thuế (EBIT) ghi nhận 3,7 tỷ đồng
+            tăng lần lượt 15,7% và 48,4% so với năm 2021; đồng thời lợi nhuận
+            gộp trong năm 2022 đạt 17 tỷ đồng, tăng 21,4% so với năm ngoái Trong
+            năm 2022, Công ty không phát sinh chi phí bán hàng, chi phí quản lý
+            doanh nghiệp tăng 30% từ 9,7 lên 12,7 tỷ do Công ty đã chủ động đưa
+            ra một khoản phí dự phòng hơn 2 tỷ.
+          </p>
+        </div>
+      </div>
+      <h3 class="text-center">Cơ cấu doanh thu</h3>
+      <div class="d-flex flex-row">
+        <div class="col-6">
+          <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+        <div class="col-6">
+          <canvas id="myChart2" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+      </div>
+      <h3 class="text-center">NHỮNG CON SỐ QUAN TRỌNG</h3>
+      <div class="d-flex flex-row">
+        <div class="col-6 pe-3 text-center">
+          <div id="consoquantrong"></div>
+          <div style="background-color: #eff3f8" class="p-3 mb-4">
+            <p>Tổng doanh thu</p>
+            <p style="font-size: 5rem; font-weight: bold; color: #023e8a">
+              108
+            </p>
+            <p style="color: #023e8a; font-weight: bold; font-size: 1.5rem">
+              tỷ đồng
+            </p>
+          </div>
+          <div id="consoquantrong"></div>
+          <div style="background-color: #eff3f8" class="p-3">
+            <p>Tổng tài sản</p>
+            <p style="font-size: 5rem; font-weight: bold; color: #023e8a">
+              697
+            </p>
+            <p style="color: #023e8a; font-weight: bold; font-size: 1.5rem">
+              tỷ đồng
+            </p>
+          </div>
+        </div>
+        <div class="col-6 ps-3 text-center">
+          <div id="consoquantrong"></div>
+          <div style="background-color: #eff3f8" class="p-3 mb-4">
+            <p>LNST</p>
+            <p style="font-size: 5rem; font-weight: bold; color: #023e8a">
+              1,88
+            </p>
+            <p style="color: #023e8a; font-weight: bold; font-size: 1.5rem">
+              tỷ đồng
+            </p>
+          </div>
+          <div id="consoquantrong"></div>
+          <div style="background-color: #eff3f8" class="p-3">
+            <p>Vốn điều lệ</p>
+            <p style="font-size: 5rem; font-weight: bold; color: #023e8a">
+              422
+            </p>
+            <p style="color: #023e8a; font-weight: bold; font-size: 1.5rem">
+              tỷ đồng
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-3">Báo cáo hoạt động xây dựng</h3>
+      <div class="d-flex flex-row">
+        <div class="col-6 pe-2">
+          <p>
+            Trong những năm qua, Công ty đã triển khai giới thiệu loạt dự án BĐS
+            tại địa bàn tỉnh Hà Nam. Công ty cho rằng tỉnh Hà Nam có rất nhiều
+            tiềm năng trong lĩnh vực KCN và các dịch vụ phục vụ KCN. Hiện nay
+            tỉnh đã có 8 KCN được thành lập và đang hoạt động với tổng diện tích
+            2.500ha. Hạ tầng các KCN được đầu tư đồng bộ, hiện đại sẵn sàng giao
+            đất cho các nhà đầu tư. Dự kiến tỉnh Hà Nam đang chuẩn bị đầu tư
+            thêm 10 KCN mới với tổng diện tích là 2.100ha và khu công nghệ cao
+            (có diện tích 660ha).
+          </p>
+          <p>
+            Trong năm 2022, hoạt động đầu tư công diễn ra mạnh mẽ trên khắp các
+            tỉnh thành đất nước và trong đó có tỉnh Hà Nam.
+          </p>
+        </div>
+        <div class="col-6 ps-2">
+          <p>
+            Với thế mạnh và uy tín trong mảng xây dựng, Công ty đã tích cực tham
+            gia đấu thầu và đã trúng thầu nhiều dự án đầu tư công thuộc nhiều
+            lĩnh vực như: giao thông, xây dựng dân dụng, công nghiệp… nhằm phục
+            vụ cho nhu cầu ngày càng lớn của người dân, cán bộ công nhân viên ở
+            các KCN tại địa bàn tỉnh. Các dự án tiêu biểu có thể kể như: Điểm
+            trường mới Trường Mầm non và Tiểu học xã Bạch Thượng, huyện Duy
+            Tiên; San nền một phần lô CN05 thuộc dự án ĐTXD và kinh doanh kết
+            cấu hạ tầng KCN hỗ trợ ĐV3 (Giai đoạn 2) tỉnh Hà Nam; Xây dựng tuyến
+            đường N4.1, D5 và một số hạng mục hạ tầng thuộc dự án ĐTXD và kinh
+            doanh kết cấu hạ tầng KCN hỗ trợ ĐV3 (Giai đoạn 2) tỉnh Hà Nam.
+          </p>
+        </div>
+      </div>
+      <img
+        src="../Repository/2023/8/14/Picture1.jpg"
+        class="img-fluid w-100"
+        alt=""
+      />
+      <h3 class="mt-3">Báo cáo hoạt động đầu tư BĐS</h3>
+      <p>
+        Năm 2022, Ban điều hành Công ty tiếp tục chỉ đạo việc thực hiện thi công
+        các dự án đang thực hiện đầu tư, chủ yếu đây là các dự án phục vụ cho sự
+        phát triển nhanh chóng của các KCN tại địa bàn tỉnh:
+      </p>
+      <ul>
+        <li>Khu nhà ở đô thị trung tâm Duy Tiên</li>
+        <li>Dự án XD HTKT khu nhà ở Chợ Lương</li>
+        <li>
+          Dự án đầu tư xây dựng tuyến đường nối từ nút giao ngã ba Hòa Mạc đến
+          đường ĐH-05 theo hình thức BT
+        </li>
+        <li>Dự án XD HTKT khu nhà ở đô thị Văn Xá</li>
+        <li>
+          Dự án Đầu tư xây dựng 05 tuyến đường trục chính thuộc QH chi tiết xây
+          dựng tỷ lệ 1/2000 khu vực trung tâm đô thị Duy Tiên theo hình thức xây
+          dựng - chuyển giao (BT)
+        </li>
+        <li>Dự án đầu tư Xây dựng khu nhà ở Tân Hà (Giai đoạn I)</li>
+        <li>
+          Dự án đầu tư xây dựng nhà xưởng cho thuê tại xã Châu Giang, huyện Duy
+          Tiên.
+        </li>
+        <li>
+          Dự án đầu tư xây dựng Tổ hợp khách sạn TMDV tổng hợp và siêu thị, kết
+          hợp văn phòng cho thuê tại Khu đô thị mới dọc QL38 từ phường Hòa Mạc
+          đến cầu Yên Lệnh thuộc xã Trác Văn, thị xã Duy Tiên, tỉnh Hà Nam
+        </li>
+      </ul>
+      <img
+        src="../Repository/2023/8/14/Picture2.jpg"
+        class="img-fluid w-100"
+        alt=""
+      />
+    </section>
+    <script>
+      var xValues = [
+        'Doanh thu cung cấp dịch vụ',
+        'Doanh thu hợp đồng xây dựng',
+      ]
+      var yValues = [2.8, 97.2]
+      var barColors = ['#8FAADC', '#2F5597']
+
+      new Chart('myChart', {
+        type: 'pie',
+        data: {
+          labels: xValues,
+
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          title: {
+            display: true,
+            text: '2022',
+          },
+        },
+      })
+      var xValues = [
+        'Doanh thu cung cấp dịch vụ',
+        'Doanh thu hợp đồng xây dựng',
+      ]
+      var yValues = [2.7, 97.3]
+      var barColors = ['#8FAADC', '#2F5597']
+
+      new Chart('myChart2', {
+        type: 'pie',
+        data: {
+          labels: xValues,
+
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          title: {
+            display: true,
+            text: '2021',
+          },
+        },
+      })
+    </script>
+  </body>
+</html>
