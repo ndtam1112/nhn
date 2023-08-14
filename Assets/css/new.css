@@ -112,3 +112,18 @@ ul {
     text-align: left;
     width: 40%;
 }
+
+#tb31 td:nth-child(1) {
+    font-weight: bold;
+    background-color: #c4e0f5;
+    color: #023e8a
+}
+
+#tb31b td:nth-child(1), #tb31b td:nth-child(2) {
+    text-align: left;
+}
+
+#tmbc #tb15 tr td:nth-child(1) {
+    text-align: left;
+    width: 40%;
+}
