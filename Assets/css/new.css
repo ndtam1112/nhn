@@ -119,3 +119,13 @@ ul {
     width: 100%;
 
 }
+
+#ct .col-5 {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 2px #2F5597 solid;
+}
+
+#khpt .block-1 p {
+    margin: auto 8px;
+}
