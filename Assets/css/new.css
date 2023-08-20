@@ -129,3 +129,11 @@ ul {
 #khpt .block-1 p {
     margin: auto 8px;
 }
+
+#ttcp-tb td:nth-child(1), #ttcp-tb td:nth-child(4),#ttcp-tb td:nth-child(5),#ttcp-tb td:nth-child(6),#ttcp-tb td:nth-child(7) {
+    text-align: center;
+}
+
+#ttcp-tb td:nth-child(1),#ttcp-tb td:nth-child(2) {
+    font-weight: bold;
+}
