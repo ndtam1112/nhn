@@ -138,3 +138,34 @@ ul {
     font-weight: bold;
 }
 
+section#gthd table td:nth-child(1) {
+    text-align: center;
+}
+
+section#hdhdqt div#block-5  td:nth-child(1), section#hdhdqt div#block-5  td:nth-child(3) {
+    text-align: center;
+}
+
+section#hdhdqt div#block-5  td:nth-child(2) {
+    font-weight: bold;
+}
+
+section#hdhdqt div#block-5  td:nth-child(4), section#hdhdqt div#block-5  td:nth-child(5) {
+    text-align: right;
+}
+
+section#hdhdqt #block-6 table td:nth-child(2), section#hdhdqt table td:nth-child(5) {
+    font-weight: bold;
+    text-align: center;
+}
+
+section#hdhdqt #block-7 td:nth-child(1) {
+    background-color: #c4e0f5; 
+    color: #023e8a;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#gdtl #tb1 td:nth-child(3), #gdtl td:nth-child(4) {
+    text-align: right;
+}
