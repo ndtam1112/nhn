@@ -137,7 +137,6 @@ ul {
 #ttcp-tb td:nth-child(1),#ttcp-tb td:nth-child(2) {
     font-weight: bold;
 }
-
 section#gthd table td:nth-child(1) {
     text-align: center;
 }
@@ -168,4 +167,24 @@ section#hdhdqt #block-7 td:nth-child(1) {
 
 #gdtl #tb1 td:nth-child(3), #gdtl td:nth-child(4) {
     text-align: right;
+}
+
+#hqhd img {
+    margin-bottom: 0px;
+}
+
+#tcns .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #c4e0f5;
+    padding: 24px;
+}
+
+#tcns .circle p {
+    margin: 0;
+}
+
+#mtsxkd #bl1 p {
+    margin: 0;
 }
